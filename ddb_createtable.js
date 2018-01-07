@@ -11,20 +11,12 @@ var params = {
     {
       AttributeName: 'CUSTOMER_ID',
       AttributeType: 'N'
-    },
-    {
-      AttributeName: 'CUSTOMER_NAME',
-      AttributeType: 'S'
     }
   ],
   KeySchema: [
     {
       AttributeName: 'CUSTOMER_ID',
       KeyType: 'HASH'
-    },
-    {
-      AttributeName: 'CUSTOMER_NAME',
-      KeyType: 'RANGE'
     }
   ],
   ProvisionedThroughput: {

@@ -9,10 +9,13 @@ ddb = new AWS.DynamoDB({apiVersion: '2012-10-08'});
 var params = {
   TableName: 'CUSTOMER_LIST',
   Item: {
-    'CUSTOMER_ID' : {N: '002'},
-    'CUSTOMER_NAME' : {S: 'Stuart Owens'},
+    'CUSTOMER_ID' : {N: '003'},
+    'CUSTOMER_NAME' : {S: 'Cameron Owens'},
     "DOG": { "S": "YES" },
-    "CAT": { "S": "NO" }
+    "CAT": { "S": "NO" },
+    "CAR": { "S": "NO" },
+    "HOUSE": { "S": "NO" },
+    "AGE" : {N: '025'}
   }
 };
 
